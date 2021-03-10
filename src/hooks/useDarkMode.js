@@ -1,9 +1,22 @@
 import useLocalStorage from './useLocalStorage'
+import useMedia from './useMedia'
+
+const usePrefersDarkMode = () => {
+    return useMedia(
+        ['(prefers-color-scheme: dark)'],
+        [true],
+        false
+    )
+}
 
 const useDarkMode = () => {
-    const [useDarkMode, setUseDarkMode] = useLocalStorage('dark-mode', false)
+    const [isDarkModeEnabled, setIsDarkModeEnabled] = useLocalStorage('dark-mode', false)
+    const prefersDarkMode = usePrefersDarkMode()
 
-    return [useDarkMode, setUseDarkMode]
+    const enabled = typeof isDarkModeEnabled !== 'undefined'
+        ? isDarkModeEnabled : prefersDarkMode
+
+    return [enabled, setIsDarkModeEnabled]
 }
 
 export default useDarkMode
