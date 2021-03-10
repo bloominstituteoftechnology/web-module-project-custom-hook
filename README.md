@@ -22,20 +22,20 @@ In this project you'll take this crypto currency tracker app and build two custo
 - [x] Download project dependencies by running `npm install`
 - [x] Start up the app using `npm start`
 - [x] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into main (student's Repository). **Please don't merge your own pull request**
-- [ ] From the home page of your repo, make sure you have your branch selected
-- [ ] Copy the URL and paste it into Canvas
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into main (student's Repository). **Please don't merge your own pull request**
+- [x] From the home page of your repo, make sure you have your branch selected
+- [x] Copy the URL and paste it into Canvas
   
 ## Minimum Viable Product
 
-- [ ] Build a custom hook that let's you save data to localStorage
-- [ ] Build a second custom hook that sets the `dark-mode` class on the body element
-- [ ] Compose your two new hooks together to be able to set and persist your user's dark mode preference in your app
+- [x] Build a custom hook that let's you save data to localStorage
+- [x] Build a second custom hook that sets the `dark-mode` class on the body element
+- [x] Compose your two new hooks together to be able to set and persist your user's dark mode preference in your app
 
 ## STEP 1 - useLocalStorage
 
