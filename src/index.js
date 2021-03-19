@@ -5,14 +5,14 @@ import axios from "axios";
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
 
-// import useDark from './hooks/useDark';
+import useDarkMode from './hooks/useDark';
 import useLocalStorage from './hooks/useLocalStorage';
 
 import "./styles.scss";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-  const [darkMode, setDarkMode] = useLocalStorage('darkMode', false);
+  const [darkMode, setDarkMode] = useDarkMode('darkMode', false);
 
   const [todos, setToDos] = useLocalStorage('todos', []);
   const [urs, setUsers] = useLocalStorage('urs', [{name:"warren"}]);
