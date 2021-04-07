@@ -18,3 +18,4 @@ const Charts = ({ coinData }) => {
   );
 };
 export default Charts;
+ 
