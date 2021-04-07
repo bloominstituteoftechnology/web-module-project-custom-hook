@@ -12,10 +12,7 @@ import "./styles.scss";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-  const [darkMode, setDarkMode] = useLocalStorage('darkMode', false);
-
-  const [todos, setToDos] = useLocalStorage('todos', []);
-  const [urs, setUsers] = useLocalStorage('urs', [{name:"warren"}]);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     axios
