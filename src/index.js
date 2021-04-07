@@ -5,8 +5,6 @@ import axios from "axios";
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
 
-// import useDark from './hooks/useDark';
-import useLocalStorage from './hooks/useLocalStorage';
 
 import "./styles.scss";
 
