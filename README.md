@@ -1,6 +1,6 @@
 # Module Project: Composing Stateful Logic - Dark Mode
 
-This project allows you to practice the concepts and techniques learned in this module and apply them in a concrete project. This module explored Form management in React. You learned what stateful logic is, how to build custom hooks, how to compose multiple hooks together, and how to use mocks and spies in testing. In your project you will demonstrate proficiency of these subjects and principles by creating an application using each of these.
+This project allows you to practice the concepts and techniques learned in this module and apply them in a concrete project. This module explored Form management in React. You learned what stateful logic is, how to build custom hooks, how to compose multiple hooks together, and how to use mocks and spies in testing. In your project you will demonstrate proficiency of these subjects and principles by creating an application using each of these. ok
 
 ## Instructions
 
@@ -30,7 +30,7 @@ Follow these steps for completing your project.
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into main (student's Repository). **Please don't merge your own pull request**
 - [ ] From the home page of your repo, make sure you have your branch selected
 - [ ] Copy the URL and paste it into Canvas
-  
+
 ## Minimum Viable Product
 
 - [ ] Build a custom hook that let's you save data to localStorage
@@ -84,7 +84,7 @@ export const useLocalStorage = (key, initialValue) => {
   - `setValue` should look something like this:
 
 ```js
-const setValue = value => {
+const setValue = (value) => {
   // Save state
   setStoredValue(value);
   // Save to local storage
