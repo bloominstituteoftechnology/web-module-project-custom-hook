@@ -6,8 +6,7 @@ const useLocalStorage = (key, initialValue) => {
     const [storedValue, setStoredValue] = useState(() =>{
         const item = window.localStorage.getItem(key);
 
-            if(item=== JSON.parse(item))
-            return initialValue
+           return item ? JSON.parse(item) : initialValue
 
         })
 

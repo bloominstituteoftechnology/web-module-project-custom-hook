@@ -1,18 +1,18 @@
-import useLocalStorage from './hooks/useLocalStorage'
+import useLocalStorage from './useLocalStorage'
 
-export  default useLocalStorage = (darkOn) => {
-    const [someValue, setSomeValue] = useLocalStorage(darkOn)
+const useDarkMode = (darkOn) => {
+    const [someValue, setSomeValue] = useLocalStorage('isdark', darkOn)
 
     const handleChanges = e =>{
-        setSomeValue({
-            ...someValue,
-            [e.target.name]: e.target.value
-        })
+        setSomeValue(
+        !someValue)
     }
 
-    const clearDark = e =>{
-        e.preventDefault();
-        setValues(darkOn)
-    }
-    return[]
+    // const clearDark = e =>{
+    //     e.preventDefault();
+    //     setSomeValue(darkOn)
+    // }
+    return[someValue, handleChanges]
 }
+
+export default useDarkMode
