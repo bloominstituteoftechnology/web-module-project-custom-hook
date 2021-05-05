@@ -51,6 +51,8 @@ This is going to be a pretty cool hook. It will be used pretty much the same way
   - Quick note, if you pass in arrays or objects to localStorage, you will need to parse it into JSON. Then when you retrieve it, like we do below, you'll need to parse it back into regular JavaScript
 
 ```js
+
+// Initial //
 // To retrieve an item from localStorage, call localStorage.getItem('itemName')
 // If that item doesn't exist, it will return undefined
 const [storedValue, setStoredValue] = useState(() => {
