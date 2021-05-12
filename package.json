@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
+    "chart.js": "^3.2.1",
     "moment": "^2.24.0",
     "react": "^16.13.0",
+    "react-chartjs-2": "^3.0.3",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
+    "react-virtualized": "^9.22.3",
     "recharts": "^2.0.0-beta.1"
   },
   "scripts": {
@@ -18,9 +22,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
