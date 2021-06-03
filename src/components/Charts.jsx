@@ -17,4 +17,4 @@ const Charts = ({ coinData }) => {
     </div>
   );
 };
-export default Charts;
+export default Charts; 
