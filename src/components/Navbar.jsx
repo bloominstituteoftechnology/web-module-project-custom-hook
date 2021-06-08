@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react'; // removed { useState } to clear the following warning in console: Line 1:17:  'useState' is defined but never used  no-unused-vars
 
 const Navbar = (props) => {
   const toggleMode = e => {
