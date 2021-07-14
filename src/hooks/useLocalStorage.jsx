@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-const localStorage = window.localStorage();
+const localStorage = window.localStorage;
 
 const useLocalStorage = (key, initialValue) => {
   // take in new data object
@@ -10,11 +10,10 @@ const useLocalStorage = (key, initialValue) => {
   });
   // on component mount or change in data value hold data passed to useLocalStorage in state then update local storage and return new data
   useEffect(() => {
-    setStoredValue(initialValue);
     localStorage.setItem(key, JSON.stringify(storedValue));
   }, [key, initialValue, storedValue]);
 
-  return storedValue;
+  return [storedValue, setStoredValue];
 };
 
 export default useLocalStorage;
