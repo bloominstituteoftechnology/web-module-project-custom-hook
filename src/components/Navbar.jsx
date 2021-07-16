@@ -13,7 +13,7 @@ const Navbar = (props) => {
         <div
           onClick={toggleMode}
           className={props.darkMode ? 'toggle toggled' : 'toggle'}
-        />
+        /> 
       </div>
     </nav>
   );
