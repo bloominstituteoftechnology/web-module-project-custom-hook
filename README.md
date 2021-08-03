@@ -13,6 +13,7 @@ This project allows you to practice the concepts and techniques learned in this 
   - [STEP 3 - Using the hook in a component](#step-3---using-the-hook-in-a-component)
   - [Stretch Problems](#stretch-problems)
   - [Submission Format](#submission-format)
+  - [Rick Mansfield's Pull Req Link](#rick-mansfields-pull-req-link)
 ## Instructions
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this project.**
@@ -141,3 +142,7 @@ After finishing your required elements, you can push your work further. These go
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into `main` (student's Repository). **Please don't merge your own pull request**
 - [ ] From the home page of your repo, make sure you have your branch selected
 - [ ] Copy the URL and paste it into Canvas to submit your project
+
+## Rick Mansfield's Pull Req Link
+
+- [Link for Convenience](https://github.com/LambdaSchool/web-module-project-custom-hook/pull/75)
