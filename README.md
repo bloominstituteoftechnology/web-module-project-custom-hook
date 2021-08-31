@@ -145,4 +145,4 @@ After finishing your required elements, you can push your work further. These go
 - [ ] Copy the URL and paste it into Canvas to submit your project
 
 ## Rick Mansfield's Pull Req link
-[Link]() test me
+[Link](https://github.com/LambdaSchool/web-module-project-custom-hook/pull/100) test me
