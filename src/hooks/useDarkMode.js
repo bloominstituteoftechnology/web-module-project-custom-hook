@@ -5,3 +5,5 @@ const useDarkMode = (key) => {
 
     return([value, setValue])
 }
+
+export default useDarkMode;
