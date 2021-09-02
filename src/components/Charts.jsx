@@ -20,27 +20,13 @@ const Charts = ({ coinData }) => {
 export default Charts;
   
   
-   
  
- 
- 
-  
- 
- 
-  
  
  
  
   
  
  
- 
-  
-  
-    
-  
-  
-  
   
  
  
@@ -55,10 +41,28 @@ export default Charts;
   
  
  
-    
+ 
+ 
+ 
+ 
   
+ 
+ 
+ 
   
+ 
+ 
+ 
   
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+ 
     
   
   
@@ -70,22 +74,4 @@ export default Charts;
   
  
  
-  
  
- 
- 
-  
- 
- 
-  
- 
- 
- 
-  
- 
- 
- 
-  
-  
-  
-  

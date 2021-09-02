@@ -7,7 +7,52 @@ test('renders Navbar without crashing', () => {
 });
   
   
+ 
+ 
+ 
   
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+  
+  
+   
+  
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
    
  
  
@@ -43,20 +88,4 @@ test('renders Navbar without crashing', () => {
   
  
  
-  
  
- 
- 
-  
- 
- 
-  
- 
- 
- 
-  
- 
- 
- 
-  
-  
