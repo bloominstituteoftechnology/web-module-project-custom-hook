@@ -30,7 +30,7 @@ Follow these steps for completing your project.
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into main (student's Repository). **Please don't merge your own pull request**
 - [ ] From the home page of your repo, make sure you have your branch selected
 - [ ] Copy the URL and paste it into Canvas
-  
+
 ## Minimum Viable Product
 
 - [ ] Build a custom hook that let's you save data to localStorage
@@ -41,7 +41,7 @@ Follow these steps for completing your project.
 
 Open your app and take a look around. The crypto currency data is being fetched and displayed for you. In `styles.scss`, at the very bottom, you'll notice there are some styles for a class called `dark-mode`. Soon, we'll write a custom hook that sets this class on the body tag. That hook is going to compose a `useLocalStorage` inside it to accomplish that, so let's write the localStorage one first.
 
-This is going to be a pretty cool hook. It will be used pretty much the same way as `useState`, but with a key and value passed into it - ie `const [name, setName] = useLocalStorage('name', 'Dustin')`. You can use `setName` to update the value of `name` on localStorage! Pretty cool, huh? Let's get to it!
+This is going to be a pretty cool hook. It will be used pretty musch the same way as `useState`, but with a key and value passed into it - ie `const [name, setName] = useLocalStorage('name', 'Dustin')`. You can use `setName` to update the value of `name` on localStorage! Pretty cool, huh? Let's get to it!
 
 - Create a new directory called `hooks`, and a new file in it called `useLocalStorage`.
 - Build a function called `useLocalStorage`. Now, to set something to localStorage, we need a key (must be a string) and a value (can be anything). To retrieve something from localStorage, we need the key. To update something in localStorage, you use the same method as adding something new, and it will just replace the old key/value pair in localStorage. Knowing this, let's add `key` and `initialValue` as parameters to the hook.
@@ -84,7 +84,7 @@ export const useLocalStorage = (key, initialValue) => {
   - `setValue` should look something like this:
 
 ```js
-const setValue = value => {
+const setValue = (value) => {
   // Save state
   setStoredValue(value);
   // Save to local storage
