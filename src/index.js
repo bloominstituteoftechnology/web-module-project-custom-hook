@@ -4,7 +4,7 @@ import axios from "axios";
 
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
-
+//import { useDarkMode } from "./hook/useDarkMode";
 
 import "./styles.scss";
 
@@ -24,6 +24,7 @@ const App = () => {
     <div className={darkMode ? "dark-mode App" : "App"}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Charts coinData={coinData} />
+      
     </div>
   );
 };

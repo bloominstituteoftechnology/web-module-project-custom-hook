@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-import "./styles.scss";
+import "../styles.scss";
 
 
 	export const useLocalStorage = (key, initialValue) => {
