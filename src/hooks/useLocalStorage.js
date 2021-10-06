@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+//updating and checking local storage for the darkmode boolean
 const useLocalStorage = (key, value) => {
   const [storedValue, setStoredValue] = useState(() => {
     let item = window.localStorage.getItem(key);
