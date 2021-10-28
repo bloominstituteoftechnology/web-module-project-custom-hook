@@ -9,11 +9,25 @@ import Navbar from "./components/Navbar";
 import "./styles.scss";
 const initialValues = false
 
+// const useLocalStorage = (key, initialvalue) => {
+//   const [storedValue, setStoredValue] = useState( () => {
+//     return false;
+//   });
+//   return [storedValue, setStoredValue]
+// }
+
 const useLocalStorage = (key, initialvalue) => {
-  const [storedValue, setStoredValue] = useState( () => {
-    return false;
+  const [storedValue, setStoredValue] = useState(() => {
+      const item = localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialvalue;
   });
-  return [storedValue, setStoredValue]
+
+  const setValue = (value) => {
+      setStoredValue(value);
+      localStorage.setItem(key, JSON.stringify(value));
+  }
+  
+  return [storedValue, setValue];
 }
 
 const useStoreString = () => {
