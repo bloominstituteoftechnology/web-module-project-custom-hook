@@ -16,7 +16,7 @@ const useLocalStorage = (key, initialvalue) => {
   return [storedValue, setStoredValue]
 }
 
-const useDarkM = () => {
+const useStoreString = () => {
   const [storedValue, setValue] = useLocalStorage('darkMode')
   console.log(storedValue)
   // const [storedValue, setValue] = useLocalStorage('darkMode')
@@ -25,7 +25,7 @@ const useDarkM = () => {
 
 
 const useDarkMode = (initialValues) =>{
-  const [darkMode, setDarkMode] = useDarkM(false);
+  const [darkMode, setDarkMode] = useStoreString(false);
   const toggleMode = e => {
     e.preventDefault();
     setDarkMode(!darkMode);
