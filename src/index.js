@@ -7,20 +7,22 @@ import Navbar from "./components/Navbar";
 
 
 import "./styles.scss";
-
-const usedarkMode = () => {
-  
-}
-
-const App = () => {
-  const [coinData, setCoinData] = useState([]);
-  const [darkMode, setDarkMode] = useState(false);
+const initialValues = false
 
 
+const useDarkMode = (initialValues) =>{
+  const [darkMode, setDarkMode] = useState(initialValues);
   const toggleMode = e => {
     e.preventDefault();
     setDarkMode(!darkMode);
   };
+  return ([darkMode, setDarkMode, toggleMode]);
+}
+
+
+const App = () => {
+  const [coinData, setCoinData] = useState([]);
+  const [darkMode, setDarkMode, toggleMode] = useDarkMode();
 
   useEffect(() => {
     axios
