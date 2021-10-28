@@ -4,20 +4,12 @@ import axios from "axios";
 
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
-
+import useDarkMode from "./hooks/useDarkMode";
 
 import "./styles.scss";
 const initialValues = false
 
 
-const useDarkMode = (initialValues) =>{
-  const [darkMode, setDarkMode] = useState(initialValues);
-  const toggleMode = e => {
-    e.preventDefault();
-    setDarkMode(!darkMode);
-  };
-  return ([darkMode, setDarkMode, toggleMode]);
-}
 
 
 const App = () => {
