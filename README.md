@@ -31,7 +31,7 @@ In this project you'll take this crypto currency tracker app and build two custo
 
 #### Build a useLocalStorage hook
 * [ ] Create a file called `useLocalStorage.js`.
-* [ ] Build a hook called that takes in a key value and an initialValue.
+* [ ] Build a hook takes in a key value and an initialValue.
 * [ ] Use the code from GP to build the the hook.
 
 #### Compose useLocalStorage around useDarkMode
@@ -39,8 +39,10 @@ In this project you'll take this crypto currency tracker app and build two custo
 * [ ] Confirm that when clicking the dark mode switch on the ui that the correct value is saved to localStorage.
 * [ ] Confirm that dark mode persists when reloading the app.
 
-## Submission Format
 
-- [ ] Only work on main.
-- [ ] Make sure to push your code at regular intervals.
-- [ ] Copy your github repo url and paste it into Canvas to submit your project
+
+## Submission Format
+- [ ] If this is your first time connecting a submission, authorize your github account within the codegrade assignment.
+- [ ] Connect your fork to Codegrade using the "Connect Git" button.
+- [ ] Find your newly created fork from the list and push your work to main.
+- [ ] Check this video for details: www.youtube.com/watch?v=fC2BO7dI6IQ
