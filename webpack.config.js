@@ -1,48 +1,67 @@
-const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
 
-module.exports = {
-  entry: './src/index.js',
-  mode: 'development',
+const DEVELOPMENT = 'development'
+const ENV = process.env.NODE_ENV || DEVELOPMENT
+const IS_DEV = ENV === DEVELOPMENT
+
+const HTML_LOADER = 'html-loader'
+const STYLE_LOADER = 'style-loader'
+const CSS_LOADER = 'css-loader'
+const BABEL_LOADER = 'babel-loader'
+
+const SERVER_URL = /http:\/\/localhost:9000/g
+const FRONTEND_PORT = 3000
+
+const INDEX_HTML_PATH = './frontend/index.html'
+const INDEX_JS_PATH = './frontend/index.js'
+const DIST_FOLDER = 'dist'
+const BUNDLE_FILE = 'index.js'
+
+const SOURCE_MAP = IS_DEV ? 'source-map' : false
+
+const config = {
+  entry: INDEX_JS_PATH,
+  mode: ENV,
   output: {
-    filename: 'index.js',
+    filename: BUNDLE_FILE,
     publicPath: '/',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, DIST_FOLDER),
   },
-  devtool: 'source-map',
+  devtool: SOURCE_MAP,
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: INDEX_HTML_PATH,
     }),
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
+    static: path.join(__dirname, DIST_FOLDER),
     historyApiFallback: true,
-    port: 3000,
+    compress: true,
+    port: FRONTEND_PORT,
   },
   module: {
     rules: [
       {
         test: /\.html$/i,
         exclude: /node_modules/,
-        loader: 'html-loader',
+        use: { loader: HTML_LOADER }
       },
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            'presets': [['@babel/preset-env', { targets: { chrome: '80' } }]],
-            'plugins': [['babel-plugin-styled-components'], ['@babel/plugin-transform-react-jsx']]
-          }
-        },
+        use: { loader: BABEL_LOADER },
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      }
+        exclude: /node_modules/,
+        use: [
+          STYLE_LOADER,
+          CSS_LOADER,
+        ],
+      },
     ],
   },
 }
+
+module.exports = config
