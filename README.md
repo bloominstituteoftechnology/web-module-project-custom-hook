@@ -4,8 +4,8 @@ This project allows you to practice the concepts and techniques learned in this 
 
 ## Objectives
 
-- Build custom hooks that extend stateful logic
-- Build custom hooks that work with persistent data
+- Build custom hooks that contain stateful logic
+- Build custom hooks that work with the localStorage Web API
 - Compose hooks together
 
 ## Introduction
