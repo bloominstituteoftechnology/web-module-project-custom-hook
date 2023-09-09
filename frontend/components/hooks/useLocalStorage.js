@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 const useLocalStorage = (key, value) => {
     const [data, setData] = useState(() => {
@@ -12,7 +12,7 @@ const useLocalStorage = (key, value) => {
         const stringified = JSON.stringify(dataToSet);
         window.localStorage.setItem(key, stringified);
         setData(dataToSet);
-    
+        // hello from vscode
       };
     
       return [data, setState];
