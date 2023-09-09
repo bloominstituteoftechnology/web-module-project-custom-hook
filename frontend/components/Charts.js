@@ -1,6 +1,8 @@
 import React from "react";
 import Chart from "./Chart";
 
+// hello from github
+
 const Charts = ({ coinData }) => {
   return (
     <div className="charts">
